@@ -16,6 +16,14 @@ export default function Footer() {
             HOME
           </Link>
 
+          <Link href="music" className="cursor-pointer hover:opacity-70 transition">
+            MUSIC
+          </Link>
+
+          <Link href="videos" className="cursor-pointer hover:opacity-70 transition">
+            VIDEOS
+          </Link>                    
+
           <Link href="/gallery" className="cursor-pointer hover:opacity-70 transition">
             GALLERY
           </Link>
@@ -33,7 +41,7 @@ export default function Footer() {
         {/* 🔥 SOCIAL ICONS (BLACK FIXED) */}
         <div className="flex justify-center gap-6 mb-6">
 
-          <a href="https://youtube.com" target="_blank" className="cursor-pointer">
+          <a href="https://youtube.com/SureshPritamOfficial" target="_blank" className="cursor-pointer">
             <Image
               src="/assets/social-icon/youtube.svg"
               alt="YouTube"
@@ -43,17 +51,7 @@ export default function Footer() {
             />
           </a>
 
-          <a href="https://facebook.com" target="_blank" className="cursor-pointer">
-            <Image
-              src="/assets/social-icon/facebook.svg"
-              alt="Facebook"
-              width={28}
-              height={28}
-              className="brightness-0 hover:opacity-70 transition"
-            />
-          </a>
-
-          <a href="https://instagram.com" target="_blank" className="cursor-pointer">
+          <a href="https://instagram.com/sureshpritamofficial" target="_blank" className="cursor-pointer">
             <Image
               src="/assets/social-icon/instagram.svg"
               alt="Instagram"
@@ -63,7 +61,17 @@ export default function Footer() {
             />
           </a>
 
-          <a href="https://twitter.com" target="_blank" className="cursor-pointer">
+          <a href="https://facebook.com/SureshPritamOfficial" target="_blank" className="cursor-pointer">
+            <Image
+              src="/assets/social-icon/facebook.svg"
+              alt="Facebook"
+              width={28}
+              height={28}
+              className="brightness-0 hover:opacity-70 transition"
+            />
+          </a>          
+
+          <a href="https://twitter.com/SureshPritam2" target="_blank" className="cursor-pointer">
             <Image
               src="/assets/social-icon/twitter.svg"
               alt="Twitter"

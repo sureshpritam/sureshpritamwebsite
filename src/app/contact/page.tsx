@@ -8,9 +8,9 @@ export default function ContactPage() {
     <main className="bg-black text-white">
 
       {/* 🔥 HERO */}
-      <section className="relative h-[50vh] w-full">
+      <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Image
-          src="/assets/images/IMG_4627.jpg.jpeg"
+          src="/assets/images/IMG_4627.webp"
           alt="Contact"
           fill
           className="object-cover opacity-60"

@@ -3,23 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// 🎬 12 VIDEOS
 const videos = [
-  {
-    title: "Romantic Song",
-    thumbnail: "/assets/images/IMG_4627.jpg.jpeg",
-  },
-  {
-    title: "Live Performance",
-    thumbnail: "/assets/images/IMG_4671.jpg.jpeg",
-  },
-  {
-    title: "Studio Session",
-    thumbnail: "/assets/images/1744435050240.jpg.jpeg",
-  },
-  {
-    title: "Behind The Scenes",
-    thumbnail: "/assets/images/IMG_4627.jpg.jpeg",
-  },
+  "kJQP7kiw5Fk",
+  "3JZ_D3ELwOQ",
+  "kxopViU98Xo",
+  "fLexgOxsZu0",
+  "RgKAFK5djSk",
+  "OPf0YbXqDm0",
+  "CevxZvSJLk8",
+  "hT_nvWreIhg",
+  "uelHwf8o7_U",
+  "60ItHLz5WEA",
+  "ktvTqknDobU",
+  "YQHsXMglC9A",
 ];
 
 export default function VideosPage() {
@@ -27,72 +24,50 @@ export default function VideosPage() {
     <main className="bg-black text-white">
 
       {/* 🔥 HERO */}
-      <section className="relative h-[50vh] w-full">
+      <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Image
-          src="/assets/images/IMG_4627.jpg.jpeg"
+          src="/assets/images/IMG_4627.webp"
           alt="Videos"
           fill
           className="object-cover opacity-60 pointer-events-none"
         />
 
-        <div className="absolute inset-0 flex flex-col justify-center px-10 md:px-20">
-
-          <h1 className="text-2xl md:text-4xl tracking-[0.35em] font-light ml-6">
+        <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20">
+          <h1 className="text-2xl md:text-4xl tracking-[0.35em] font-light ml-2 md:ml-6">
             VIDEOS
           </h1>
 
-          <p className="mt-4 text-sm italic ml-6">
+          <p className="mt-4 text-sm italic ml-2 md:ml-6">
             <Link href="/" className="text-zinc-300 cursor-pointer">
               Home
             </Link>
             {" / "}
             <span className="text-zinc-300">Videos</span>
           </p>
-
         </div>
       </section>
 
       {/* 🔥 VIDEO GRID */}
-      <section className="bg-[#e5e5e5] text-black py-16 px-6">
+      <section className="bg-[#e5e5e5] text-black py-14 px-4 md:px-6">
 
         <div className="mx-auto max-w-6xl">
 
-          <h2 className="text-base tracking-[0.35em] mb-10">
+          <h2 className="text-base tracking-[0.35em] mb-8 font-semibold">
             VIDEOS
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* ✅ GRID FIX */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
 
-            {videos.map((video, i) => (
-              <div
-                key={i}
-                className="relative h-[250px] overflow-hidden group cursor-pointer"
-              >
+            {videos.map((id, i) => (
+              <div key={i} className="w-full aspect-video">
 
-                {/* THUMBNAIL */}
-                <Image
-                  src={video.thumbnail}
-                  alt={video.title}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-110"
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  className="w-full h-full rounded-sm"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
-
-                {/* DARK OVERLAY */}
-                <div className="absolute inset-0 bg-black/40" />
-
-                {/* PLAY ICON */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="h-12 w-12 rounded-full border border-white flex items-center justify-center">
-                    ▶
-                  </div>
-                </div>
-
-                {/* TITLE */}
-                <div className="absolute bottom-0 w-full p-4 bg-black/60">
-                  <p className="text-sm text-white tracking-wide">
-                    {video.title}
-                  </p>
-                </div>
 
               </div>
             ))}
@@ -106,10 +81,10 @@ export default function VideosPage() {
       {/* 🔥 DIVIDER */}
       <div className="border-t border-zinc-800"></div>
 
-      {/* 🔥 BOTTOM TEXT */}
-      <section className="bg-black text-white text-center py-14">
+      {/* 🔥 WATCH SECTION */}
+      <section className="bg-black text-white text-center py-12">
 
-        <h2 className="text-xl tracking-[0.35em] mb-4">
+        <h2 className="text-lg md:text-xl tracking-[0.35em] mb-3 font-semibold">
           WATCH NOW
         </h2>
 

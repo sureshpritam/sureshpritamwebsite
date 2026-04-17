@@ -5,27 +5,27 @@ import Link from "next/link";
 
 const galleryImages = [
   {
-    src: "/assets/images/IMG_4627.jpg.jpeg",
+    src: "/assets/images/IMG_4627.webp",
     title: "Live Stage",
   },
   {
-    src: "/assets/images/IMG_4671.jpg.jpeg",
+    src: "/assets/images/IMG_4671.webp",
     title: "Studio Session",
   },
   {
-    src: "/assets/images/1744435050240.jpg.jpeg",
+    src: "/assets/images/1744435050240.webp",
     title: "Behind the Scenes",
   },
   {
-    src: "/assets/images/IMG_4627.jpg.jpeg",
+    src: "/assets/images/IMG_4627.webp",
     title: "Fans and Events",
   },
   {
-    src: "/assets/images/IMG_4671.jpg.jpeg",
+    src: "/assets/images/IMG_4671.webp",
     title: "Music Video",
   },
   {
-    src: "/assets/images/1744435050240.jpg.jpeg",
+    src: "/assets/images/1744435050240.webp",
     title: "Media Shoot",
   },
 ];
@@ -35,9 +35,9 @@ export default function GalleryPage() {
     <main className="bg-black text-white">
 
       {/* 🔥 HERO */}
-      <section className="relative h-[50vh] w-full">
+      <section className="relative h-[60vh] md:h-[70vh] w-full">
         <Image
-          src="/assets/images/1744435050240.jpg.jpeg"
+          src="/assets/images/1744435050240.webp"
           alt="Gallery"
           fill
           className="object-cover opacity-60"

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Official Website | Suresh Pritam",
-  description: "Official website of Suresh Pritam.",
+  description: "Singer, Lyricist, Composer",
   icons: {
     icon: "/favicon.ico",
     apple: "/favicon.ico",

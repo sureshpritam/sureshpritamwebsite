@@ -4,18 +4,18 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const images = [
-  "/assets/images/IMG_4627.jpg.jpeg",
-  "/assets/images/IMG_4671.jpg.jpeg",
-  "/assets/images/1744435050240.jpg.jpeg",
+  "/assets/images/IMG_4627.webp",
+  "/assets/images/IMG_4671.webp",
+  "/assets/images/1744435050240.webp",
 ];
 
 const music = [
-  "/assets/images/IMG_4627.jpg.jpeg",
-  "/assets/images/IMG_4671.jpg.jpeg",
-  "/assets/images/1744435050240.jpg.jpeg",
-  "/assets/images/IMG_4627.jpg.jpeg",
-  "/assets/images/IMG_4671.jpg.jpeg",
-  "/assets/images/1744435050240.jpg.jpeg",
+  "/assets/images/IMG_4627.webp",
+  "/assets/images/IMG_4671.webp",
+  "/assets/images/1744435050240.webp",
+  "/assets/images/IMG_4627.webp",
+  "/assets/images/IMG_4671.webp",
+  "/assets/images/1744435050240.webp",
 ];
 
 const videos = [
@@ -38,13 +38,13 @@ export default function HomePage() {
     <main className="bg-black text-white">
 
       {/* 🔥 HERO */}
-      <section className="relative h-[80vh] w-full overflow-hidden">
+      <section className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden">
         <Image
           key={index}
           src={images[index]}
           alt="Suresh Pritam"
           fill
-          className="object-cover opacity-70"
+          className="object-cover opacity-70 animate-zoom"
           priority
         />
 

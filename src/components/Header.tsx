@@ -8,8 +8,8 @@ const navItems = [
   { href: "/", label: "HOME" },
   { href: "/music", label: "MUSIC" },
   { href: "/videos", label: "VIDEOS" },
+  { href: "/gallery", label: "GALLERY" },  
   { href: "/biography", label: "BIOGRAPHY" },
-  { href: "/gallery", label: "GALLERY" },
   { href: "/contact", label: "CONTACT" },
 ];
 
@@ -26,7 +26,7 @@ export default function Header() {
           <div className="relative h-12 w-[140px]">
             <Image
               src="/logo.png"
-              alt="Logo"
+              alt="Suresh Pritam Logo"
               fill
               className="object-contain"
               priority
@@ -49,16 +49,16 @@ export default function Header() {
 
         {/* 🔥 DESKTOP SOCIAL */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="https://youtube.com" target="_blank" className="cursor-pointer">
+          <a href="https://youtube.com/SureshPritamOfficial" target="_blank" className="cursor-pointer">
             <Image src="/assets/social-icon/youtube.svg" alt="YouTube" width={20} height={20} />
           </a>
-          <a href="https://facebook.com" target="_blank" className="cursor-pointer">
-            <Image src="/assets/social-icon/facebook.svg" alt="Facebook" width={20} height={20} />
-          </a>
-          <a href="https://instagram.com" target="_blank" className="cursor-pointer">
+          <a href="https://instagram.com/sureshpritamofficial" target="_blank" className="cursor-pointer">
             <Image src="/assets/social-icon/instagram.svg" alt="Instagram" width={20} height={20} />
           </a>
-          <a href="https://twitter.com" target="_blank" className="cursor-pointer">
+          <a href="https://facebook.comSureshPritamOfficial" target="_blank" className="cursor-pointer">
+            <Image src="/assets/social-icon/facebook.svg" alt="Facebook" width={20} height={20} />
+          </a>          
+          <a href="https://twitter.com/SureshPritam2" target="_blank" className="cursor-pointer">
             <Image src="/assets/social-icon/twitter.svg" alt="Twitter" width={20} height={20} />
           </a>
         </div>
@@ -106,16 +106,16 @@ export default function Header() {
 
           {/* 🔥 SOCIAL */}
           <div className="flex gap-6 mt-6">
-            <a href="https://youtube.com" target="_blank" className="cursor-pointer">
+            <a href="https://youtube.com/SureshPritamOfficial" target="_blank" className="cursor-pointer">
               <Image src="/assets/social-icon/youtube.svg" alt="YouTube" width={24} height={24} />
             </a>
-            <a href="https://facebook.com" target="_blank" className="cursor-pointer">
-              <Image src="/assets/social-icon/facebook.svg" alt="Facebook" width={24} height={24} />
-            </a>
-            <a href="https://instagram.com" target="_blank" className="cursor-pointer">
+            <a href="https://instagram.com/sureshpritamofficial" target="_blank" className="cursor-pointer">
               <Image src="/assets/social-icon/instagram.svg" alt="Instagram" width={24} height={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" className="cursor-pointer">
+            <a href="https://facebook.comSureshPritamOfficial" target="_blank" className="cursor-pointer">
+            <Image src="/assets/social-icon/facebook.svg" alt="Facebook" width={20} height={20} />
+          </a>            
+            <a href="https://twitter.com/SureshPritam2" target="_blank" className="cursor-pointer">
               <Image src="/assets/social-icon/twitter.svg" alt="Twitter" width={24} height={24} />
             </a>
           </div>
